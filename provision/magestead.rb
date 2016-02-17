@@ -33,7 +33,7 @@ class Magestead
     config.vm.hostname = settings["domain"] ||= "magestead.dev"
 
     # Configure A Private Network IP
-    config.vm.network :private_network, ip: settings["ip"] ||= "192.168.47.10"
+    config.vm.network :private_network, ip: settings["ip"] ||= "192.168.47.13"
 
     mount_opts = []
     if (settings["mount_type"] == "nfs")

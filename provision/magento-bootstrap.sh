@@ -14,13 +14,13 @@ cd /vagrant/magento;
 
 php -f install.php -- \
 --license_agreement_accepted "yes" \
---locale "en_GB" \
---timezone "Europe/London" \
---default_currency "GBP" \
+--locale "es_MX" \
+--timezone "America/Mexico_City" \
+--default_currency "MXN" \
 --db_host "localhost" \
 --db_name "$DB" \
 --db_user "root" \
---db_pass "root" \
+--db_pass "vagrant" \
 --session_save "db" \
 --url "$domain" \
 --use_rewrites "yes" \
@@ -28,8 +28,8 @@ php -f install.php -- \
 --use_secure "no" \
 --use_secure_admin "no" \
 --secure_base_url "$domain" \
---admin_firstname "RichDynamix" \
---admin_lastname "Magestead" \
+--admin_firstname "My" \
+--admin_lastname "Username" \
 --admin_email "admin@admin.com" \
 --admin_username "admin" \
 --admin_password "password123"
